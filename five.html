@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+    <canvas id="sketch" width="300" height="300">
+    </canvas>
+<script>
+    function draw() {
+    var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+    var x = 0
+    context.fillStyle = '#9932CC';
+    for (var i = 0; i < 5; i = i + 1){
+    context.fillRect(x, 100, 20, 20);
+    context.fill();
+    x = x +25;
+    }
+}
+</script>
+</body>
+</html>
